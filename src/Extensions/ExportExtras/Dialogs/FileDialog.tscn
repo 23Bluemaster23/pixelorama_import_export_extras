@@ -1,0 +1,8 @@
+[gd_scene format=2]
+
+[node name="FileDialog" type="FileDialog"]
+margin_right = 589.0
+margin_bottom = 362.0
+window_title = "Abrir un Directorio"
+mode = 2
+access = 2

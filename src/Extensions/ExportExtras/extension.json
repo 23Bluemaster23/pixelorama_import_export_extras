@@ -1,0 +1,12 @@
+{
+    "name": "ExportExtras",
+    "display_name": "Import/Export Extras",
+    "description": "Add Extras Exports and Imports",
+    "author": "BlueMaster",
+    "version": "0.1",
+	"supported_api_versions": [3],
+    "license": "MIT",
+    "nodes": [
+        "Main.tscn"
+    ]
+}
