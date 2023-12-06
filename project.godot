@@ -146,7 +146,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Export With Split Layer"
+config/name="Import Export Extras"
 run/main_scene="res://src/Extensions/ExportExtras/Main.tscn"
 config/icon="res://Tests/icon.png"
 

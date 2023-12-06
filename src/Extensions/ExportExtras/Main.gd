@@ -7,7 +7,8 @@ onready var import_extras
 onready var import_file_dialog
 onready var import_dialog
 
-var items_id:Dictionary
+var export_id
+var import_id
 var global
 func _enter_tree() -> void:
 	extension_api = get_node_or_null("/root/ExtensionsApi")
@@ -33,9 +34,10 @@ func _enter_tree() -> void:
 	import_extras.file_dialog = import_file_dialog
 	
 	var type = extension_api.menu.FILE
-	items_id["Export Extras"] = extension_api.menu.add_menu_item(type, "Export Extras", export_extras)
-	items_id["Import Extras"] = extension_api.menu.add_menu_item(type, "Import Extras", import_extras)
+	export_id = extension_api.menu.add_menu_item(type, "Export Extras", export_extras)
+	import_id = extension_api.menu.add_menu_item(type, "Import Extras", import_extras)
 func _exit_tree() -> void:  
-	extension_api.menu.remove_menu_item(extension_api.menu.FILE, items_id["Export Extras"])
-	extension_api.menu.remove_menu_item(extension_api.menu.FILE, items_id["Import Extras"])
+	extension_api.menu.remove_menu_item(extension_api.menu.FILE,import_id)
+	extension_api.menu.remove_menu_item(extension_api.menu.FILE, export_id)
+	
 
